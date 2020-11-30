@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "@emotion/styled";
-import colors from "styles/colors";
-import dimensions from "styles/dimensions";
-import Logo from "components/_ui/Logo";
+import React from "react"
+import { Link } from "gatsby"
+import styled from "@emotion/styled"
+import colors from "styles/colors"
+import dimensions from "styles/dimensions"
+import Logo from "components/_ui/Logo"
 
 const HeaderContainer = styled("div")`
     padding-top: 3.75em;
@@ -23,11 +23,11 @@ const HeaderLinks = styled("div")`
     width: 100%;
     max-width: 200px;
 
-    @media(max-width: ${dimensions.maxwidthTablet}px) {
+    @media (max-width: ${dimensions.maxwidthTablet}px) {
         grid-gap: 5.5em;
     }
 
-    @media(max-width: ${dimensions.maxwidthMobile}px) {
+    @media (max-width: ${dimensions.maxwidthMobile}px) {
         grid-gap: 2.5em;
     }
 
@@ -76,17 +76,13 @@ const Header = () => (
     <HeaderContainer>
         <HeaderContent>
             <Link to="/">
-                <Logo/>
+                <Logo />
             </Link>
             <HeaderLinks>
-                <Link
-                    activeClassName="Link--is-active"
-                    to="/work">
+                <Link activeClassName="Link--is-active" to="/work">
                     Work
                 </Link>
-                <Link
-                    activeClassName="Link--is-active"
-                    to="/blog">
+                <Link activeClassName="Link--is-active" to="/blog">
                     Blog
                 </Link>
             </HeaderLinks>
@@ -94,4 +90,4 @@ const Header = () => (
     </HeaderContainer>
 )
 
-export default Header;
+export default Header
